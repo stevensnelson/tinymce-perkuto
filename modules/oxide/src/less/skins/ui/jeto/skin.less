@@ -1,0 +1,29 @@
+@import 'src/less/theme/theme';
+
+//
+// Place your variables here
+//
+
+// active
+@toolbar-button-background-color: #ffffff;
+@toolbar-button-hover-background-color: #eeeeee;
+
+// disabled
+@toolbar-button-disabled-background-color: #cccccc;
+
+// selected
+@toolbar-button-enabled-background-color: #30a4dc;
+@toolbar-button-enabled-hover-background-color: #008ebd;
+
+.tox {
+  .tox-tbtn--enabled:hover {
+    background: @toolbar-button-enabled-hover-background-color;
+  }
+}
+
+button[title="More..."] {
+  .tox-tbtn__icon-wrap {
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
